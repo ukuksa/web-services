@@ -10,9 +10,10 @@ app.get('/', (req, res) => {
 app.post('/soap', function (req, res) {
     res.send('Got a POST request')
   })
-  app.post('/rest', function (req, res) {
-    res.send('Got a POST request')
-  })
+
+app.post('/rest', function (req, res) {
+  res.send('Got a POST request')
+})
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
